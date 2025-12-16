@@ -1,0 +1,36 @@
+xpath always starts with //
+//input[@name='fld_username']
+
+//input[@name='firstname' or @aria-label="Firstname"]
+//input[@name='country' or @class="last countries"]
+
+//select[@name='birthday_day' and title='Day']
+
+//input[@*='email']
+//select[@*='birthday_day' and @*='Day']
+//*[@*='birthday_day' and @*='Day']
+
+
+//a[text()='Create a Page']
+
+//div[contains(text(),'new account')]  #This is for locating elements using partial inner text of html
+
+
+#Locate element by using xpath : Use partial attribute of element
+//input[contains(@type,'pass')]
+
+
+#locate element by xpath - navigate through parents
+//table[@role='presentation']/tbody/tr[2]/td[1]/input
+
+#locate element by xpath - navigate through child i.e move to parent from child
+//input[@type='email']/parent::td/parent::tr/parent::tbody/parent::table
+
+#locate element by xpath - navigate through siblings
+//input[@id='tab2'/following-sibling::label]  #We use 'preceding' if the sibling is before the element
+
+#locate element by xpath - navigate through both parent and sibling to find the required element
+//input[@type='element']/parent::td/following-sibling::td[1]/input
+//input[@type='pass']/parent::td/preceding-sibling::td/input
+
+
