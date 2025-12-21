@@ -1,3 +1,4 @@
+#THis is for example as there is no dropdown in the website that we are using which is uatdemo.enlightbook.com
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By 
 from selenium.webdriver.support.select import Select
