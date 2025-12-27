@@ -1,2 +1,3 @@
 from . import test_TC001_Registration_ValidData
-from . import test_TC002_Registration_InvalidData
+from . import test_TC002_DataDrivenTest_With_StaticData
+from .import test_TC003_DataDrivenTestingWith_Exceldatasource

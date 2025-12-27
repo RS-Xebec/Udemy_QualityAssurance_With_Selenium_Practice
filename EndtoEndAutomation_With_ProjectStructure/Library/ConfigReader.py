@@ -31,5 +31,5 @@ def readConfigData(section,key):
 
 def fetchElementLocators(section,key):
     config=configparser.ConfigParser()
-    config.read("./ConfigurationFiles/elements.cfg")
+    config.read("./ConfigurationFiles/elementslocators.cfg")
     return config.get(section,key)
